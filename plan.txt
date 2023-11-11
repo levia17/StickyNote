@@ -1,0 +1,4 @@
+UI-UX:
+- Các layer là các tờ giấy chồng lên nhau
+Function: 
+- Nhấn giữ và kéo sấp giấy tạo hiệu ứng xé note

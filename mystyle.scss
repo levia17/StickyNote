@@ -1,6 +1,7 @@
 body {
     background-color: #b4afa8;
     main{
+        position: relative;
         .btnAddNote{
             margin-top: 10px;
             span{
@@ -10,6 +11,14 @@ body {
                 padding: 50px;
                 cursor: pointer;
             }
+        }
+        .spaceForNote{
+            border: 1px solid #000;
+            background-color:  #fff;
+            height: 310px;
+            width: 300px;
+            position:absolute;
+            bottom: -400px;
         }
     }
 }
