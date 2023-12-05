@@ -1,7 +1,6 @@
 body {
     background-color: #b4afa8;
     main{
-        position: relative;
         .btnAddNote{
             margin-top: 10px;
             span{
@@ -17,12 +16,14 @@ body {
             background-color:  #fff;
             height: 310px;
             width: 300px;
-            position:absolute;
+            // margin-top: 100px;
+            position: relative;
             bottom: -400px;
         }
     }
 }
 .newNote{
+    position: absolute;
     background-color: #fff;
     color: #000;
     width: 250px;

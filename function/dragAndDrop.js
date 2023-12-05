@@ -1,6 +1,6 @@
 
 // target elements with the "draggable" class
-export function dragAndDrop(){
+export default function dragAndDrop(){
   interact('.newNote')
     .draggable({
       // enable inertial throwing

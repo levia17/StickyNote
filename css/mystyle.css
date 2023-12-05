@@ -1,9 +1,6 @@
 body {
   background-color: #b4afa8;
 }
-body main {
-  position: relative;
-}
 body main .btnAddNote {
   margin-top: 10px;
 }
@@ -19,11 +16,12 @@ body main .spaceForNote {
   background-color: #fff;
   height: 310px;
   width: 300px;
-  position: absolute;
+  position: relative;
   bottom: -400px;
 }
 
 .newNote {
+  position: absolute;
   background-color: #fff;
   color: #000;
   width: 250px;
