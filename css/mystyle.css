@@ -27,3 +27,11 @@ body main .spaceForNote {
   width: 250px;
   height: 300px;
 }
+
+.notesfunc {
+  width: 200px;
+  height: 250px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+}
