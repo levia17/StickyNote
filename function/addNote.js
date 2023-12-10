@@ -1,23 +1,22 @@
-var spaceForNote = {};
+import { Note } from "../models/notesClass.js";
+
+var noteStorageArea = {};
+var serial = 0;
+
 
 export default function addNote(){
-    var listColor = ["red", "blue", "green"];
     var btnAddNote = document.querySelector(".btnAddNote span");
     btnAddNote.addEventListener("click", () => {
-        var newNote = document.createElement("div");
-        for(var i = 1; i <= Object.keys(spaceForNote).length; i++){
-        
-        }
-        document.querySelector("main .spaceForNote").appendChild(newNote)
-        newNote.classList.add("newNote");
-        var colorRandom = Math.floor(Math.random()*listColor.length);
-        newNote.style.backgroundColor = listColor[colorRandom];
-        newNote.setAttribute("contentEditable", "true");
+        serial += 1; 
+        noteStorageArea += new Note(serial, "newNote");
+        var newDiv = document.createElement('div');
+        document.querySelector(".spaceForNote").appendChild(newDiv);
+        newDiv.setAttribute("id", serial);
+        newDiv.setAttribute("contentEditable", "true");
+        newDiv.classList.add("newNote");
         // Note's function
         var notesfunc = document.createElement("div");
         notesfunc.classList.add("notesfunc");
-        document.querySelector("main .newNote").appendChild(notesfunc); 
-        
+        document.getElementById(`${serial}`).appendChild(notesfunc); 
     } ) 
-
     }
