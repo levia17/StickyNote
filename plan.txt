@@ -1,4 +1,10 @@
 UI-UX:
+Note's Effect:
 - Các layer là các tờ giấy chồng lên nhau
+Function: 
+- UpperCase, Bold, Size, Font, Italic
+- Close notes.
+- Find out text in notes.
+- Note's info (ID, Type, Note's purpose)
 Function: 
 - Nhấn giữ và kéo sấp giấy tạo hiệu ứng xé note
