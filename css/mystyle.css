@@ -24,14 +24,27 @@ body main .spaceForNote {
   position: absolute;
   background-color: #fff;
   color: #000;
-  width: 250px;
+  width: 100%;
   height: 300px;
 }
 
-.notesfunc {
-  width: 200px;
-  height: 250px;
-  background-color: #000;
+.notesfunc-container {
+  width: 100%;
+  height: 15%;
+  background-color: #ffd00f;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.btnRemove {
+  width: 13%;
+  height: 80%;
+  background-color: #ff0000;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.btnRemove i.fa-solid.fa-xmark {
+  font-size: 40px;
 }
