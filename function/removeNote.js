@@ -1,5 +1,8 @@
-// import { noteStorageArea } from "./addNote";
+import { serial } from "./addNote.js";
 
-export function removeNote(){
-
+export function remove(){
+    document.querySelectorAll('.notesfunc .btnRemove').addEventListener('click', () => {
+        alert('123');
+    })
 }
+

@@ -3,7 +3,4 @@ export class Note {
         this.id = id;
         this.attri = attri;
     }
-    changeColorBg(){
-    
-    }
 }

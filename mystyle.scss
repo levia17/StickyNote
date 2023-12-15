@@ -30,7 +30,7 @@ body {
     height: 300px;
 }
 
-.notesfunc-container{
+.notesfunc{
     width: 100%;
     height: 15%;
     background-color: #ffd00f;
@@ -39,6 +39,7 @@ body {
     align-items: center;
 }
 .btnRemove{
+    cursor: pointer;
     width: 13%;
     height: 80%;
     background-color: #ff0000;

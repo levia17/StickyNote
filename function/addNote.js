@@ -1,7 +1,7 @@
-import { Note } from "../models/notesClass.js";
-import { noteInterface } from "./noteInterface.js";
+import { Note } from "../models/notesInfomation.js";
+import { Interface } from "./Interface.js";
 
-var noteStorageArea = {};
+export var noteStorageArea = {};
 export var serial = 0;
 
 
@@ -10,6 +10,7 @@ export function addNote(){
     btnAddNote.addEventListener("click", () => {
         serial += 1; 
         noteStorageArea += new Note(serial, "newNote");
-        noteInterface();
+        Interface();
+        console.log(noteStorageArea);
     } ) 
     }
