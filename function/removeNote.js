@@ -1,8 +1,10 @@
 import { serial } from "./addNote.js";
-
-export function remove(){
-    document.querySelectorAll('.notesfunc .btnRemove').addEventListener('click', () => {
-        alert('123');
-    })
+var countBtn = document.querySelectorAll('.btnRemove');
+export function removeNote(){
+    for(var i = 0; i < countBtn.length; i++){
+        countBtn[i].addEventListener('click', () => {
+            console.log('123');
+        })
+    }
 }
 
