@@ -3,10 +3,11 @@ import { serial } from "./addNote.js";
 import { createEle } from "../AuxilliaryFunction.js";
 
 export function Interface(){
+    // createEle(`div`, )
     var newDiv = document.createElement('div');
     document.querySelector(".spaceForNote").appendChild(newDiv);
     newDiv.setAttribute("id", serial);
-    newDiv.setAttribute("contentEditable", "true");
+    // newDiv.setAttribute("contentEditable", "true");
     newDiv.classList.add("newNote");
 
     // Note's function
